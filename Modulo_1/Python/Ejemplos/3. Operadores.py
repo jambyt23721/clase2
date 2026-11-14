@@ -21,7 +21,7 @@ print(f"Igual: {igual}, Diferente: {diferente}, Mayor que: {mayor_que}, Menor qu
 
 # Lógicos: Para combinar condiciones.
 
-and_condition = (10 > 5 and 5 < 10)  # True (ambas son verdaderas)                  
+and_condition = (10 > 5 and 5 < 10)  # True (ambas son verdaderas todas)                  
 or_condition = (10 > 5 or 5 > 10)   # True (al menos una es verdadera)
 not_condition = not (10 > 5)         # False (niega la condición)   
 print(f"And: {and_condition}, Or: {or_condition}, Not: {not_condition}")    
