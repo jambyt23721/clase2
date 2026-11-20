@@ -1,0 +1,68 @@
+print("=== AVENTURA EN EL BOSQUE OSCURO ===")
+print("Estás caminando por un bosque oscuro y encuentras dos objetos: un FÓSFORO y una LINTERNA.")
+print()
+
+nivel1 = input("¿Con cuál te quedas? (FÓSFORO / LINTERNA): ")
+
+if nivel1 == "FÓSFORO" or nivel1 == "fósforo" or nivel1 == "Fósforo" or nivel1 == "FOSFORO" or nivel1 == "fosforo" or nivel1 == "Fosforo":
+    print("Coges el fósforo y lo enciendes. Por un instante, el bosque se ilumina... ¡y ves un gran oso grizzly! El fósforo se apaga.")
+    nivel2 = input("¿Qué haces ahora? (CORRER / ESCONDERTE / GRITAR): ")
+
+    if nivel2 == "ESCONDERTE" or nivel2 == "esconderte" or nivel2 == "Esconderte":
+        print("Te escondes detrás de un árbol grueso. El oso olfatea el aire, pero sigue de largo. Ves una cabaña a lo lejos y un río.")
+        nivel3 = input("¿Hacia dónde vas? (CABAÑA / RÍO): ")
+
+        if nivel3 == "CABAÑA" or nivel3 == "cabaña" or nivel3 == "Cabaña" or nivel3 == "CABANA" or nivel3 == "cabana" or nivel3 == "Cabana":
+            print("Llegas a la cabaña de madera. La puerta está entreabierta, pero hay una ventana rota y un sótano.")
+            nivel4 = input("¿Por dónde entras? (PUERTA / VENTANA / SÓTANO): ")
+
+            if nivel4 == "PUERTA" or nivel4 == "puerta" or nivel4 == "Puerta":
+                print("Entras en silencio. Sobre una mesa hay una radio vieja, un mapa y un botiquín.")
+                nivel5 = input("¿Qué objeto revisas primero? (RADIO / MAPA / BOTIQUÍN): ")
+
+                if nivel5 == "RADIO" or nivel5 == "radio" or nivel5 == "Radio":
+                    print("Enciendes la radio y escuchas a un guardabosques pidiendo tu ubicación.")
+                    nivel6 = input("¿Le dices que estás en la CABAÑA o sales al SENDERO a buscarlo?: ")
+
+                    if nivel6 == "CABAÑA" or nivel6 == "cabaña" or nivel6 == "Cabaña" or nivel6 == "CABANA" or nivel6 == "cabana" or nivel6 == "Cabana":
+                        print("¡FINAL FELIZ! Esperas seguro dentro y el guardabosques llega a rescatarte al amanecer.")
+                    elif nivel6 == "SENDERO" or nivel6 == "sendero" or nivel6 == "Sendero":
+                        print("¡FINAL INESPERADO! Al salir al sendero te vuelves a cruzar con el oso en la oscuridad. Fin del juego.")
+                    else:
+                        print("Opción no válida. Perdiste la señal de radio. Fin del juego.")
+
+                elif nivel5 == "MAPA" or nivel5 == "mapa" or nivel5 == "Mapa":
+                    print("Mientras lees el mapa a oscuras, pisas una tabla floja y caes al sótano. Fin del juego.")
+                elif nivel5 == "BOTIQUÍN" or nivel5 == "botiquín" or nivel5 == "Botiquín" or nivel5 == "BOTIQUIN" or nivel5 == "botiquin" or nivel5 == "Botiquin":
+                    print("El botiquín estaba vacío y escuchas pasos acercándose a la puerta. Fin del juego.")
+                else:
+                    print("Opción no válida. Hiciste ruido y algo te atrapó. Fin del juego.")
+
+            elif nivel4 == "VENTANA" or nivel4 == "ventana" or nivel4 == "Ventana":
+                print("Te cortas con los vidrios rotos y el ruido atrae a los lobos del bosque. Fin del juego.")
+            elif nivel4 == "SÓTANO" or nivel4 == "sótano" or nivel4 == "Sótano" or nivel4 == "SOTANO" or nivel4 == "sotano" or nivel4 == "Sotano":
+                print("La trampilla del sótano se cierra por fuera y quedas atrapado. Fin del juego.")
+            else:
+                print("Opción no válida. Fin del juego.")
+
+        elif nivel3 == "RÍO" or nivel3 == "río" or nivel3 == "Río" or nivel3 == "RIO" or nivel3 == "rio" or nivel3 == "Rio":
+            print("Intentas cruzar el río en la oscuridad, pero la corriente es muy fuerte. Fin del juego.")
+        else:
+            print("Opción no válida. Te perdiste entre la maleza. Fin del juego.")
+
+    elif nivel2 == "CORRER" or nivel2 == "correr" or nivel2 == "Correr":
+        print("El oso es mucho más rápido que tú y te alcanza en segundos. Fin del juego.")
+    elif nivel2 == "GRITAR" or nivel2 == "gritar" or nivel2 == "Gritar":
+        print("Tu grito asusta al oso, pero lo pone agresivo y te ataca. Fin del juego.")
+    else:
+        print("Opción no válida. Te quedaste paralizado y el oso te vio. Fin del juego.")
+
+elif nivel1 == "LINTERNA" or nivel1 == "linterna" or nivel1 == "Linterna":
+    print("Enciendes la linterna y ves un camino iluminado. De pronto, oyes algo entre los árboles.")
+    nivel2_b = input("¿Qué decides hacer? (SEGUIR / BUSCAR / APAGAR): ")
+
+    if nivel2_b == "SEGUIR" or nivel2_b == "seguir" or nivel2_b == "Seguir":
+        print("Sigues el camino iluminado sin detenerte y encuentras un puente colgante sobre un barranco.")
+        nivel3_b = input("¿Qué haces? (CRUZAR / RODEAR): ")
+
+        if nivel3_b == "CRUZAR" or nivel3_b == "cruzar" or nivel3_b == "Cruzar":
